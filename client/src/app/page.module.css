@@ -1,0 +1,45 @@
+.main {
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  margin: 80px auto;
+  padding: 16px;
+  box-shadow: 4px 7px 11px 5px #0000000d;
+  border-radius: 8px;
+  background-color: white;
+}
+
+.inputs {
+  border: none;
+  border: 1px #cfcfcf solid;
+  height: 40px;
+  text-indent: 4px;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.inputs:focus-visible {
+  outline: none;
+  border: 2px #428adf solid;
+}
+
+.joinButton {
+  all: unset;
+  box-sizing: border-box;
+  background-color: #428adf;
+  color: white;
+  padding: 8px 16px;
+  width: 100%;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.joinButton:hover {
+  background-color: #3b7cc9;
+}
+
+.joinButton:active {
+  background-color: #356eb2;
+}

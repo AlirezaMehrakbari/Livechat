@@ -1,0 +1,101 @@
+.chat_footer {
+    padding-top: 16px;
+}
+
+.chat_body {
+    flex: 1;
+    background-image: url("/image/taieri.png");
+    min-height: 300;
+    background-size: 150px;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-color: #f3f3f3;
+    overflow: auto;
+}
+
+/* width */
+.chat_body::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+.chat_body::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+.chat_body::-webkit-scrollbar-thumb {
+    background: #70a1d5;
+}
+
+/* Handle on hover */
+.chat_body::-webkit-scrollbar-thumb:hover {
+    background: #428adf;
+}
+
+.chat_container {
+    max-width: 500px;
+    margin: 80px auto;
+    box-shadow: 4px 7px 11px 5px #0000000d;
+    background-color: white;
+    border-radius: 8px;
+    padding: 16px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.inputContainer {
+    display: flex;
+    width: 100%;
+    border: 1px solid #428adf;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.messageInput {
+    border: none;
+    width: 100%;
+    text-indent: 4px;
+}
+
+.messageInput:focus-visible {
+    outline: none;
+}
+
+.sendButton {
+    all: unset;
+    box-sizing: border-box;
+    background-color: #428adf;
+    padding: 4px;
+}
+
+.speechBubble {
+    width: fit-content;
+    padding: 8px;
+    margin: 8px;
+}
+
+.speechBubbleMe {
+    background-color: #8eb9ec;
+    border-radius: 8px 8px 8px 0px;
+}
+
+.speechBubbleOther {
+    background-color: #5596e2;
+    border-radius: 8px 8px 0px 8px;
+}
+
+.speechContainerMe {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.speechContainerOther {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
